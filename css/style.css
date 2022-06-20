@@ -23,7 +23,7 @@
     color: #21243D;
   }
     
-  .intro-prg {
+  .intro-excerpt {
     font-family: 'Heebo';
     font-style: normal;
     font-weight: 400;
@@ -49,11 +49,11 @@
     text-decoration: none;
   }
   
-  .posts-list {
+  .blog-posts-list {
     list-style: none;
   }
   
-  .posts-position{
+  .blog-posts-title {
     font-family: 'Heebo';
     font-style: normal;
     font-weight: 700;
@@ -62,7 +62,7 @@
     color: #21243D;
   }
   
-  .posts-date {
+  .blog-posts-date {
     font-family: 'Heebo';
     font-style: normal;
     font-weight: 400;
@@ -71,7 +71,7 @@
     color: #21243D;
   }
   
-  .posts-theme {
+  .blog-posts-category {
     font-family: 'Heebo';
     font-style: normal;
     font-weight: 400;
@@ -80,7 +80,7 @@
     color: #21243D;
   }
   
-  .posts-prg {
+  .blog-posts-excerpt {
     font-family: 'Heebo';
     font-style: normal;
     font-weight: 400;
@@ -89,7 +89,7 @@
     color: #21243D; 
   }
   
-  .posts-position {
+  .blog-posts-title {
     font-family: 'Heebo';
     font-style: normal;
     font-weight: 700;
@@ -98,7 +98,7 @@
     color: #21243D;
   }
   
-  .posts-date {
+  .blog-posts-date {
     font-family: 'Heebo';
     font-style: normal;
     font-weight: 400;
@@ -138,7 +138,7 @@
     line-height: 60px;
   }
   
-  .works-name {
+  .works-category {
     font-family: 'Heebo';
     font-style: normal;
     font-weight: 400;
@@ -147,7 +147,7 @@
     color: #8695A4;
   }
   
-  .works-prg {
+  .works-excerpt {
     font-family: 'Heebo';
     font-style: normal;
     font-weight: 400;
@@ -173,15 +173,6 @@
     font-size: 18px;
     line-height: 60px;
    }
-  
-   .works-name {
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 29px;
-    color: #8695A4;
-  }
   
   .socials-list {
     list-style: none;
