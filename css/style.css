@@ -1,191 +1,354 @@
+@font-face {
+  font-family: "Heebo";
+  src: url("../fonts/woff2/Heebo-Medium.woff2") format("woff2"),
+       url("../fonts/woff/Heebo-Medium.woff") format("woff");
+       font-weight: 500;
+       font-style: normal;
+}
 
+@font-face {
+  font-family: "Heebo";
+  src: url("../fonts/woff2/Heebo-Bold.woff2") format("woff2"),
+       url("../fonts/woff/Heebo-Bold.woff") format("woff");
+       font-weight: 700;
+       font-style: normal;
+}
+  
+@font-face {
+  font-family: "Heebo";
+  src: url("../fonts/woff2/Heebo-Regular.woff2") format("woff2"),
+       url("../fonts/woff/Heebo-Regular.woff") format("woff");
+       font-weight: 400;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: "Heebo";
+  src: url("../fonts/woff2/Heebo-Black.woff2") format("woff2"),
+       url("../fonts/woff/Heebo-Black.woff") format("woff");
+       font-weight: 900;
+       font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* * {
+margin: 0;
+padding: 0;
+} */
+
+
+body {
+  margin: 0;
+  font-family: "Heebo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+a {
+  font-family: 'Heebo', sans-serif; 
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  width: 855px;
+  margin:0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  display: inline-block;
+  font-family: "Heebo", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  background-color: #FF6464;
+  padding: 17px; 20px;
+  font-size: 20px; 
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.header {
+  padding-top: 24px;
+}
 
 .header-menu {
-    list-style: none; 
-  }
+  display: flex;
+  justify-content: flex-end;
+  gap: 33px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
   
-  .header-link { 
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 29px;
-    color: #000000;
-    text-decoration: none;
-  }
+}
+
+.header-link { 
+  font-family: "Heebo", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  color: #000000;    
+} 
+
+
+/* .container2 {
+  width: 855px;
+  margin:0 auto;
+  margin-bottom: 15px;
+}
+   */
+.title {
+  font-family: "Heebo", sans-serif;
+  margin: 0;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 60px;
+  color: #21243D;
+}
+
+.intro-title {
+  width: 447px;
+  margin-bottom: 40px;
+}
+
+.intro {
+  padding-top: 176px;
+  padding-bottom: 71px;
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+.inner-container {
+  display: flex;
+  justify-content: space-between;
+} 
+
+.intro-left {
+  width: 503px;
   
-  .intro-title {
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 44px;
-    line-height: 60px;
-    color: #21243D;
-  }
-    
-  .intro-excerpt {
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #21243D;
-  }
+}
+
+.intro-right {
+  width: 243px;
+}
+
+.intro-img {
+  height: 243px;
+  width:  243px;
+}
+
+.intro-position {
+  display: block;
+}
+
+.intro-excerpt {
+  margin: 0;
+  margin-bottom: 38px;
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #21243D;
+}
+
+.section-title {
+  font-family: "Heebo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 60px;
+  color: #21243D;
+}
+
+.blog {
+  padding-bottom: 32px;
+  background-color: #FF6464;
+}
+
+.section-blog-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog-link {
+  font-family: 'Heebo'; sans-serif
+  font-style: normal;
+  font-weight: 400;
+
+  font-size: 16px;
+  line-height: 24px;
+  color: #00A8CC;
+}
+
+.blog-posts-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.blog-posts-item {
+  margin: 0;
+  padding: 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 4 10 rgba(187, 225, 250, 0.25);
+  border-radius: 4px;
+}
+
+.blog-posts-title {
+  margin: 0;
+  margin-bottom: 17px;
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 38px;
+  color: #21243D;
+}
+
+.blog-posts-details {
+  display: flex;
+}
+
+.blog-posts-details-category {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
   
-  .btn {
-    text-decoration: none;
-  }
-  
-  .section-title {
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 60px;
-    color: #21243D;
-  }
-  
-  .blog-link {
-    text-decoration: none;
-  }
-  
-  .blog-posts-list {
-    list-style: none;
-  }
-  
-  .blog-posts-title {
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 38px;
-    color: #21243D;
-  }
-  
-  .blog-posts-date {
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
-    color: #21243D;
-  }
-  
-  .blog-posts-category {
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
-    color: #21243D;
-  }
-  
-  .blog-posts-excerpt {
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #21243D; 
-  }
-  
-  .blog-posts-title {
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 38px;
-    color: #21243D;
-  }
-  
-  .blog-posts-date {
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
-    color: #21243D; 
-  }
-  
-  .section-title {
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 60px;
-    color: #21243D;
-  }
-  
-  .works-list {
-    list-style: none;
-  }
-  
-  .works-title {
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 44px;
-    color: #21243D;
-    text-decoration: none;
-  }
-  
-  .works-year {
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 18px;
-    line-height: 60px;
-  }
-  
-  .works-category {
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 29px;
-    color: #8695A4;
-  }
-  
-  .works-excerpt {
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #21243D;
-  }
-  
-  .works-title {
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 44px;
-    color: #21243D;
-    text-decoration: none;
-  }
-  
-  .works-year {
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 18px;
-    line-height: 60px;
-   }
-  
-  .socials-list {
-    list-style: none;
-  }
-  
-  .footer-copyrights {
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    color: #21243D;
-  
-  }
-  
-  
+.blog-posts-details-time {
+  position: relative;
+  padding-right: 30px;
+  margin-right: 26px;
+}
+
+.blog-posts-details-time::after {
+  position: absolute;
+  right: 0;
+  content: "";
+  width: 1px;
+  height: 21px;
+  background-color:  #000000;
+}
+
+.blog-posts-details-category-item::after {
+  content: ",";
+  margin-right: 8px;
+}
+
+.blog-posts-details-category-item:last-child::after {
+  display: none;
+}
+
+.works {
+  padding-top: 15px;
+  padding-bottom: 93px;
+}
+
+.works-featured-title {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 60px;
+  color: #21243D;
+}
+
+.works-title {
+  margin-bottom: 22px;
+}
+
+ .works-item {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 31px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #E0E0E0;;
+}
+
+ .works-img {
+  width: 246px;
+  height: 180px;
+}
+
+ .works-item-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+  color: #21243D;
+}
+
+ .works-item-details {
+  margin: 0;
+  margin-bottom: 19px;
+ }
+
+ .works-item-year {
+  padding: 0 10px;
+  margin-right: 26px;
+  font-weight: 900;
+  font-size: 18px;
+  color: #FFFFFF;
+  background: #142850;
+  border-radius: 16px;
+}
+
+ .works-item-category {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: #8695A4;
+}
+
+.works-item-excerpt {
+  margin: 0;
+}
+
+.footer {
+  padding-top: 83px;
+  margin-bottom: 13px;
+  border: 1px solid blue;
+  text-align: center;
+ }
+
+ .socials-list {
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.socials-link path {
+  transition: 0.3s ease-in-out
+}
+
+.socials-link:hover path {
+  fill: #0515a8;
+}
+
+
+ 
